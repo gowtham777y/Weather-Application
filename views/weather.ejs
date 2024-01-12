@@ -1,3 +1,11 @@
 <%- include("header.ejs") %>
-<h1>Welcome to Weather App</h1>
+<div class="info">
+    <form action="/submit" method="POST" class="cityInput">
+        <input name="city" type="text" placeholder="Enter the city name">
+        <input type="submit" value="Submit">
+    </form>
+    <div class="weather">
+        <%= content %>
+    </div>
+</div>
 <%- include("footer.ejs") %>
